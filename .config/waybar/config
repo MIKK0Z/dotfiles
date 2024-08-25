@@ -30,9 +30,13 @@
         "timezone": "Poland",
         "tooltip-format": "<big>{:%d.%m.%Y}</big>\n<tt><small>{calendar}</small></tt>",
         "format": " {:%H:%M}",
-        "calendar/format": {
-            "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+        "calendar": {
+            "format": {
+                "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
         }
+        
+        
     },
     "backlight": {
         "device": "intel_backlight",
