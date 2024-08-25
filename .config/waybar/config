@@ -31,7 +31,7 @@
         "tooltip-format": "<big>{:%d.%m.%Y}</big>\n<tt><small>{calendar}</small></tt>",
         "format": " {:%H:%M}",
         "calendar/format": {
-            "today": "<b class='today'><u>{}</u></b>"
+            "today": "<b id='today'><u>{}</u></b>"
         }
     },
     "backlight": {
