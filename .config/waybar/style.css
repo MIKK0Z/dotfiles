@@ -54,7 +54,7 @@
   margin-right: 1rem;
 }
 
-#clock #today {
+#today {
   background-color: @red;
 }
 
