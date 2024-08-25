@@ -55,7 +55,7 @@
 }
 
 #today {
-  background-color: @red;
+  color: @red;
 }
 
 #battery {
