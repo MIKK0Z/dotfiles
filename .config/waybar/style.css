@@ -54,10 +54,6 @@
   margin-right: 1rem;
 }
 
-#today {
-  color: @red;
-}
-
 #battery {
   color: @green;
 }
