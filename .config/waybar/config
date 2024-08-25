@@ -32,7 +32,7 @@
         "format": " {:%H:%M}",
         "calendar": {
             "format": {
-                "today": "<span class='today'><b><u>{}</u></b></span>"
+                "today": "<span><b><u>{}</u></b></span>"
             }
         }
         

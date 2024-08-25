@@ -54,7 +54,7 @@
   margin-right: 1rem;
 }
 
-.today {
+#clock span {
   color: #00FF00
 }
 
