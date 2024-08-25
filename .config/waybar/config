@@ -27,10 +27,9 @@
         "max-length": 50
     },
     "clock": {
-        "timezone": "Europe/Poland",
+        "timezone": "Poland",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": " {:%d/%m/%Y}",
-        "format": " {:%H:%M}"
+        "format": " {:%H:%M}  {:%d.%m}"
     },
     "backlight": {
         "device": "intel_backlight",
