@@ -28,8 +28,7 @@
     },
     "clock": {
         "timezone": "Poland",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": " {:%d.:%m}",
+        "tooltip-format": "<big>{%d %m %Y}</big>\n<tt><small>{calendar}</small></tt>",
         "format": " {:%H:%M}"
     },
     "backlight": {
