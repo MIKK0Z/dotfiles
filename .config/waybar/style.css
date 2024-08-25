@@ -54,6 +54,10 @@
   margin-right: 1rem;
 }
 
+#clock #today {
+  background-color: @red;
+}
+
 #battery {
   color: @green;
 }
