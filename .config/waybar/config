@@ -29,7 +29,8 @@
     "clock": {
         "timezone": "Poland",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": " {:%H:%M}  {:%d.%m}"
+        "format-alt": " {:%d.:%m}",
+        "format": " {:%H:%M}"
     },
     "backlight": {
         "device": "intel_backlight",
