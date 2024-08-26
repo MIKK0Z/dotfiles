@@ -23,7 +23,7 @@
   color: @lavender;
   border-radius: 1rem;
   padding: 0.4rem;
-  padding-right: 0.8rem;
+  padding-right: 0.7rem;
 }
 
 #workspaces button.active {
