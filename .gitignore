@@ -1,6 +1,7 @@
 /.config/gh/
 /.config/VSCodium/
 /.config/systemd/
+/.config/gtk-3.0/
 /.config/pavucontrol.ini
 /.config/user-dirs.dirs
 /.config/user-dirs.locale
