@@ -17,12 +17,15 @@
   margin: 5px;
   background-color: @surface0;
   margin-left: 1rem;
+  position: relative;
 }
 
 #workspaces button {
   color: @lavender;
   border-radius: 1rem;
   padding: 0.4rem;
+  position: absolute;
+  right: 1px;
 }
 
 #workspaces button.active {

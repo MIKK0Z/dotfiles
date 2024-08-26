@@ -11,8 +11,8 @@
          "sort-by-name": true,
          "format": " {icon} ",
          "format-icons": {
-             "default": "",
-         },
+             "default": ""
+         }
      },
     "tray": {
         "icon-size": 21,
@@ -42,7 +42,7 @@
         "device": "intel_backlight",
         "format": "{icon} {percent}%",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
-	"tooltip": false
+	    "tooltip": false
     },
     "battery": {
     	"interval": 5,
@@ -66,7 +66,7 @@
     "custom/lock": {
         "tooltip": false,
         "on-click": "hyprlock",
-        "format": "",
+        "format": ""
     },
     "custom/power": {
         "tooltip": false,
