@@ -2,9 +2,13 @@
     "layer": "top",
     "position": "top",
 
-    "modules-left": ["custom/music"],
+    "modules-left": ["hyprland/window"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["pulseaudio", "backlight", "battery", "clock", "tray", "custom/lock", "custom/power"],
+    "modules-right": ["group/group-connection", "pulseaudio", "backlight", "battery", "clock", "custom/lock", "custom/power"],
+
+    "hyprland/window": {
+        "max-lenght": 25
+    },
 
     "hyprland/workspaces": {
          "disable-scroll": true,
@@ -13,20 +17,13 @@
          "format-icons": {
              "default": ""
          }
-     },
-    "tray": {
-        "icon-size": 21,
-        "spacing": 10
     },
-    "custom/music": {
-        "format": "  {}",
-        "escape": true,
-        "interval": 5,
-        "tooltip": false,
-        "exec": "playerctl metadata --format='{{ title }}'",
-        "on-click": "playerctl play-pause",
-        "max-length": 50
+
+    "group/group-connection": {
+        "orientation": "horizontal",
+        "modules": ["network", "bluetooth"]
     },
+    
     "clock": {
         "timezone": "Poland",
         "tooltip-format": "<big>{:%d.%m.%Y}</big>\n<tt><small>{calendar}</small></tt>",
@@ -36,7 +33,6 @@
                 "today": "<span><b><u>{}</u></b></span>"
             }
         } 
-        
     },
     "backlight": {
         "device": "intel_backlight",
