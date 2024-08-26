@@ -1,11 +1,12 @@
 {
-    "layer": "top", // Waybar at top layer
-    "position": "top", // Waybar position (top|bottom|left|right)
-    // Choose the order of the modules
+    "layer": "top",
+    "position": "top",
+
     "modules-left": ["custom/music"],
-    "modules-center": ["wlr/workspaces"],
+    "modules-center": ["hyprland/workspaces"],
     "modules-right": ["pulseaudio", "backlight", "battery", "clock", "tray", "custom/lock", "custom/power"],
-    "wlr/workspaces": {
+
+    "hyprland/workspaces": {
          "disable-scroll": true,
          "sort-by-name": true,
          "format": " {icon} ",
