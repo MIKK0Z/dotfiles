@@ -4,7 +4,7 @@
 
     "modules-left": ["hyprland/window"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["group/group-connection", "pulseaudio", "backlight", "battery", "clock", "custom/lock", "custom/power"],
+    "modules-right": ["group/group-connection" , "pulseaudio"/*, "backlight", "battery", "clock", "custom/lock", "custom/power"*/],
 
     // left
     "hyprland/window": {
@@ -22,14 +22,17 @@
     },
     
     // right
-    // group-connection
+    // connections
     "group/group-connection": {
         "orientation": "horizontal",
         "modules": ["network", "bluetooth"]
     },
 
     "network": {
-
+        "format-ethernet": "󰈁",
+        "format-wifi": "{icon}",
+        "format-disconnected": "󰞃",
+        "format-icons": ["󰢿", "󰢼", "󰢽", "󰢾"]
     },
 
     "bluetooth": {
