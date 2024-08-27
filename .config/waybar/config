@@ -6,22 +6,37 @@
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["group/group-connection", "pulseaudio", "backlight", "battery", "clock", "custom/lock", "custom/power"],
 
+    // left
     "hyprland/window": {
         "max-lenght": 25
     },
 
+    // center
     "hyprland/workspaces": {
          "disable-scroll": true,
          "sort-by-name": true,
-         "format": " {icon} ",
+         "format": "{icon}",
          "format-icons": {
              "default": ""
          }
     },
-
+    
+    // right
+    // group-connection
     "group/group-connection": {
         "orientation": "horizontal",
         "modules": ["network", "bluetooth"]
+    },
+
+    "network": {
+
+    },
+
+    "bluetooth": {
+        "format-disabled": "󰂲",
+        "format-off": "󰂲",
+        "format-on": "󰂯",
+        "format-connected": "󰂱"
     },
     
     "clock": {
