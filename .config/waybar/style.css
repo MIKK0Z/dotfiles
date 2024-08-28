@@ -17,7 +17,7 @@
 
 #waybar > * > * > * > * {
   border-radius: .5rem;
-  background-color: @surface0;
+  background-color: @base;
 }
 
 /* left */
@@ -66,14 +66,20 @@
   color: @green;
 }
 
-
-
-/* hardware */
-#group-hardware > * > * {
-  /* padding: 0 .75rem; */
+#bluetooth.off, #bluetooth.disabled {
+  color: @red;
 }
 
-#battery {
+#bluetooth.on {
+  color: @green;
+}
+
+#bluetooth.connected {
+  color: @sapphire;
+}
+
+/* hardware */
+#cpu, #memory, #battery {
   color: @green;
 }
 
@@ -81,19 +87,19 @@
   color: @yellow;
 }
 
+#cpu.warning,
+#memory.warning,
 #battery.warning:not(.charging) {
-  color: @rosewater;
+  color: @peach;
 }
 
+#cpu.critical,
+#memory.critical,
 #battery.critical:not(.charging) {
   color: @red;
 }
 
 /* misc */
-#group-misc {
-
-}
-
 #clock {
   color: @blue;
   border-radius:  .5rem .5rem ;
@@ -113,10 +119,6 @@
 }
 
 /* power */
-#group-power {
-
-}
-
 #custom-lock {
   color: @lavender;
 }

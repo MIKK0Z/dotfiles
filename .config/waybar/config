@@ -34,14 +34,16 @@
         "tooltip-format-wifi": "{essid}\n{ipaddr}",
         "tooltip-format-ethernet": "{ipaddr}",
         "tooltip-format-disconnected": "Disconnected",
-        "on-click": "echo 'rofi wifi zrobic'"
+        // "on-click": "echo 'rofi wifi zrobic'"
+        "on-click": "nm-applet"
     },
 
     "bluetooth": {
         "format-disabled": "󰂲",
         "format-off": "󰂲",
         "format-on": "󰂯",
-        "format-connected": "󰂱"
+        "format-connected": "󰂱",
+        "on-click": "blueman-manager"
     },
 
     // hardware
@@ -51,11 +53,19 @@
     },
 
     "cpu": {
-        "format": " {usage}%"
+        "format": " {usage}%",
+        "states": {
+            "warning": 80,
+            "critical": 95
+        }
     },
 
     "memory": {
-        "format": " {percentage}%"
+        "format": " {percentage}%",
+        "states": {
+            "warning": 80,
+            "critical": 95
+        }
     },
 
     "battery": {
