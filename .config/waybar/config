@@ -10,8 +10,7 @@
 
     // left
     "hyprland/window": {
-        "icon": true,
-        // "format": "{icon} {class}"
+        "icon": true
     },
 
     // center
