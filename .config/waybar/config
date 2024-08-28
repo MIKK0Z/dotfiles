@@ -2,23 +2,21 @@
     "layer": "top",
     "position": "top",
 
+    "reload_style_on_change": true,
+
     "modules-left": ["hyprland/window"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["group/group-connection" , "pulseaudio"/*, "backlight", "battery", "clock", "custom/lock", "custom/power"*/],
+    "modules-right": ["group/group-connection", "group/group-hardware", "group/group-misc", "group/group-power"],
 
     // left
     "hyprland/window": {
-        "max-lenght": 25
+        "icon": true,
+        // "format": "{icon} {class}"
     },
 
     // center
     "hyprland/workspaces": {
-         "disable-scroll": true,
-         "sort-by-name": true,
-         "format": "{icon}",
-         "format-icons": {
-             "default": ""
-         }
+        "format": ""
     },
     
     // right
@@ -30,9 +28,13 @@
 
     "network": {
         "format-ethernet": "󰈁",
-        "format-wifi": "{icon}",
         "format-disconnected": "󰞃",
-        "format-icons": ["󰢿", "󰢼", "󰢽", "󰢾"]
+        "format-wifi": "{icon}",
+        "format-icons": ["󰢿", "󰢼", "󰢽", "󰢾"],
+        "tooltip-format-wifi": "{essid}\n{ipaddr}",
+        "tooltip-format-ethernet": "{ipaddr}",
+        "tooltip-format-disconnected": "Disconnected",
+        "on-click": "echo 'rofi wifi zrobic'"
     },
 
     "bluetooth": {
@@ -41,23 +43,21 @@
         "format-on": "󰂯",
         "format-connected": "󰂱"
     },
-    
-    "clock": {
-        "timezone": "Poland",
-        "tooltip-format": "<big>{:%d.%m.%Y}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": " {:%H:%M}",
-        "calendar": {
-            "format": {
-                "today": "<span><b><u>{}</u></b></span>"
-            }
-        } 
+
+    // hardware
+    "group/group-hardware": {
+        "orientation": "horizontal",
+        "modules": ["cpu", "memory", "battery"]
     },
-    "backlight": {
-        "device": "intel_backlight",
-        "format": "{icon} {percent}%",
-        "format-icons": ["", "", "", "", "", "", "", "", ""],
-	    "tooltip": false
+
+    "cpu": {
+        "format": " {usage}%"
     },
+
+    "memory": {
+        "format": " {percentage}%"
+    },
+
     "battery": {
     	"interval": 5,
         "states": {
@@ -66,9 +66,22 @@
         },
         "format": "{icon} {capacity}%",
         "format-charging": "",
-        "format-alt": "{icon}",
         "format-icons": ["", "", "", "", ""]
     },
+
+    // misc
+    "group/group-misc": {
+        "orientation": "horizontal",
+        "modules": ["pulseaudio", "backlight", "clock"]
+    },
+    
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+	    "tooltip": false
+    },
+
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-muted": "",
@@ -77,11 +90,30 @@
         },
         "on-click": "pavucontrol"
     },
+
+    "clock": {
+        "timezone": "Poland",
+        "tooltip-format": "<big>{:%d.%m.%Y}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": " {:%H:%M}",
+        "calendar": {
+            "format": {
+                "today": "<span><b><u>{}</u></b></span>"
+            }
+        }
+    },
+
+    // power
+    "group/group-power": {
+        "orientation": "horizontal",
+        "modules": ["custom/lock", "custom/power"]
+    },
+
     "custom/lock": {
         "tooltip": false,
         "on-click": "hyprlock",
         "format": ""
     },
+
     "custom/power": {
         "tooltip": false,
         "on-click": "wlogout &",
