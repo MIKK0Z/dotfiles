@@ -9,8 +9,17 @@ $git_state\
 $git_status\
 $git_metrics\
 $fill\
+$bun\
+$golang\
+$kotlin\
+$lua\
+$nodejs\
+$php\
+$python\
+$rust\
 $cmd_duration $jobs\
 $line_break\
+$sudo\
 $character"""
 
 palette = "catppuccin_macchiato"
@@ -62,154 +71,54 @@ style = "overlay0"
 
 [git_status]
 format = '([\[$all_status$ahead_behind\]]($style) )'
-style = "teal"
+style = "teal bold"
+
+[git_metrics]
+disabled = false
 
 [fill]
 symbol = " "
 
-[docker_context]
-symbol = " "
+[cmd_duration]
+format = "[$duration]($style)"
 
-[aws]
-symbol = "  "
+[jobs]
+symbol = " "
+style = "bold red"
+format = "[$symbol$number]($style)"
 
-[buf]
-symbol = " "
-
-[c]
-symbol = " "
-
-[conda]
-symbol = " "
-
-[crystal]
-symbol = " "
-
-[dart]
-symbol = " "
-
-[elixir]
-symbol = " "
-
-[elm]
-symbol = " "
-
-[fennel]
-symbol = " "
+[bun]
+symbol = "🥟 "
+format = "[$symbol$version]($style)"
 
 [golang]
 symbol = " "
-
-[guix_shell]
-symbol = " "
-
-[haskell]
-symbol = " "
-
-[haxe]
-symbol = " "
-
-[java]
-symbol = " "
-
-[julia]
-symbol = " "
+format = "[$symbol$version]($style)"
 
 [kotlin]
 symbol = " "
+format = "[$symbol$version]($style)"
 
 [lua]
 symbol = " "
-
-[meson]
-symbol = "󰔷 "
-
-[nim]
-symbol = "󰆥 "
-
-[nix_shell]
-symbol = " "
+format = "[$symbol$version]($style)"
 
 [nodejs]
 symbol = " "
-
-[ocaml]
-symbol = " "
-
-[os.symbols]
-Alpaquita = " "
-Alpine = " "
-AlmaLinux = " "
-Amazon = " "
-Android = " "
-Arch = " "
-Artix = " "
-CentOS = " "
-Debian = " "
-DragonFly = " "
-Emscripten = " "
-EndeavourOS = " "
-Fedora = " "
-FreeBSD = " "
-Garuda = "󰛓 "
-Gentoo = " "
-HardenedBSD = "󰞌 "
-Illumos = "󰈸 "
-Kali = " "
-Linux = " "
-Mabox = " "
-Macos = " "
-Manjaro = " "
-Mariner = " "
-MidnightBSD = " "
-Mint = " "
-NetBSD = " "
-NixOS = " "
-OpenBSD = "󰈺 "
-openSUSE = " "
-OracleLinux = "󰌷 "
-Pop = " "
-Raspbian = " "
-Redhat = " "
-RedHatEnterprise = " "
-RockyLinux = " "
-Redox = "󰀘 "
-Solus = "󰠳 "
-SUSE = " "
-Ubuntu = " "
-Unknown = " "
-Void = " "
-Windows = "󰍲 "
-
-[package]
-symbol = "󰏗 "
-
-[perl]
-symbol = " "
+format = "[$symbol$version]($style)"
 
 [php]
 symbol = " "
-
-[pijul_channel]
-symbol = " "
+format = "[$symbol$version]($style)"
 
 [python]
 symbol = " "
-
-[rlang]
-symbol = "󰟔 "
-
-[ruby]
-symbol = " "
+format = "[$symbol$version]($style)"
 
 [rust]
 symbol = "󱘗 "
+format = "[$symbol$version]($style)"
 
-[scala]
-symbol = " "
-
-[swift]
-symbol = " "
-
-[zig]
-symbol = " "
+[sudo]
+disabled = false
+format = "[$symbol]($style)"
