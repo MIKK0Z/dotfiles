@@ -1,0 +1,9 @@
+@import "./colors.rasi"
+
+window {
+    background-color: @mantle;
+}
+
+element {
+    text-color: red;
+}

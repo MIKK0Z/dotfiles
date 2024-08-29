@@ -1,13 +1,13 @@
 configuration {
-    display-drun: "Applications";
-    display-windows: "Windows";
-    drun-display-format: "{icon} {name}";
-    font: "JetBrainsMono Nerd Font Medium 16";
-    terminal: "alacritty";
-    modi: "drun,window";
-    show-icons: true;
-    icon-theme: "Papirus";
+  modes: ["window", "drun"];
+  display-drun: "App";
+  display-windows: "Window";
+
+  terminal: "alacritty";
+	
+  show-icons: true;
+	icon-theme: "Papirus";
+  font: "JetBrainsMono Nerd Font Medium 16";
 }
 
-@theme "./a.rasi"
-//@theme "./catppuccin-macchiato.rasi"
+@import "./style.rasi"
