@@ -1,11 +1,13 @@
 configuration {
-    display-drun: "Applications:";
-    display-windows: "Windows:";
+    display-drun: "Applications";
+    display-windows: "Windows";
     drun-display-format: "{icon} {name}";
     font: "JetBrainsMono Nerd Font Medium 16";
+    terminal: "alacritty";
     modi: "drun,window";
     show-icons: true;
     icon-theme: "Papirus";
 }
 
-@theme "./catppuccin-macchiato.rasi"
+@theme "./a.rasi"
+//@theme "./catppuccin-macchiato.rasi"
