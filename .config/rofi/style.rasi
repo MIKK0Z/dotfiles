@@ -4,6 +4,7 @@ window {
   background-color: @base;
   border: 2;
   border-color: @crust;
+  border-radius: 8;
 }
 
 element {
