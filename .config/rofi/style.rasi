@@ -1,9 +1,59 @@
 @import "./colors.rasi"
 
 window {
-    background-color: @mantle;
+  background-color: @base;
+  border: 2;
+  border-color: @crust;
 }
 
 element {
-    text-color: red;
+  padding: 8 12;
+  background-color: transparent;
+  text-color: @text;
+}
+
+element selected {
+  text-color: @text;
+  background-color: @mantle;
+}
+
+element-text {
+  background-color: transparent;
+  text-color: inherit;
+  vertical-align: 0.5;
+}
+
+element-icon {
+  size: 32;
+  padding: 0 10 0 0;
+  background-color: transparent;
+}
+
+entry {
+  padding: 12;
+  background-color: @base;
+  text-color: @text;
+}
+
+inputbar {
+  children: [prompt, entry];
+  background-color: @base;
+}
+
+listview {
+  background-color: @base;
+  columns: 1;
+  lines: 10;
+}
+
+mainbox {
+  children: [inputbar, listview];
+  background-color: @base;
+}
+
+prompt {
+  enabled: true;
+  padding: 12 0 0 12;
+  background-color: @base;
+  text-color: @text;
 }

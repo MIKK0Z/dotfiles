@@ -1,7 +1,7 @@
 configuration {
   modes: ["window", "drun"];
-  display-drun: "App";
-  display-windows: "Window";
+  display-drun: "App:";
+  display-windows: "Window:";
 
   terminal: "alacritty";
 	
@@ -10,4 +10,11 @@ configuration {
   font: "JetBrainsMono Nerd Font Medium 16";
 }
 
-@import "./style.rasi"
+@theme "./style.rasi"
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
