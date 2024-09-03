@@ -29,13 +29,13 @@
     	"interval": 1,
         "format-ethernet": "󰈁",
         "format-disconnected": "󰞃",
-        "format-wifi": "{icon}",
+        "format-wifi": "{icon} {frequency}",
         "format-icons": ["󰢿", "󰢼", "󰢽", "󰢾"],
         "tooltip-format-wifi": "{essid}\n{ipaddr}",
         "tooltip-format-ethernet": "{ipaddr}",
         "tooltip-format-disconnected": "Disconnected",
         // "on-click": "echo 'rofi wifi zrobic'"
-        "on-click": "nm-applet"
+        "on-click":  "alacritty -e sh -c \"nmtui\""
     },
 
     "bluetooth": {
