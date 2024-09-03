@@ -1,8 +1,9 @@
 @import "./colors.rasi"
 
 window {
-  background-color: @base;
-  border: 2;
+  background-color: @crust;
+  padding: 2;
+  //border: 2;
   border-color: @crust;
   border-radius: 8;
 }
@@ -48,6 +49,7 @@ listview {
 }
 
 mainbox {
+  border-radius: 8;
   children: [inputbar, listview];
   background-color: @base;
 }
