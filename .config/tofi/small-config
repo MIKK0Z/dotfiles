@@ -1,0 +1,17 @@
+prompt-text = "> "
+
+text-color = #a5adcb
+prompt-color = #5b6078
+selection-color = #b7bdf8
+selection-match-color = #91d7e3
+background-color = #181926dd
+
+width = 100%
+padding-left = 45%
+padding-top = 40%
+height = 100%
+border-width = 0
+outline-width = 0
+result-spacing = 14
+num-results = 8
+font = "JetBrainsMono Nerd Font"
