@@ -82,3 +82,6 @@ eval "$(fzf --zsh)"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# path
+export PATH=$PATH:/home/mikey/bin

@@ -126,7 +126,7 @@
 
     "custom/power": {
         "tooltip": false,
-        "on-click": "wlogout &",
+        "on-click": "powermenu.sh",
         "format": ""
     }
 }
