@@ -29,7 +29,7 @@
     	"interval": 1,
         "format-ethernet": "󰈁",
         "format-disconnected": "󰞃",
-        "format-wifi": "{icon} {frequency}",
+        "format-wifi": "{icon}",
         "format-icons": ["󰢿", "󰢼", "󰢽", "󰢾"],
         "tooltip-format-wifi": "{essid}\n{ipaddr}",
         "tooltip-format-ethernet": "{ipaddr}",

@@ -66,6 +66,8 @@ alias ll="ls -l --color"
 alias la="ls -la --color"
 alias pnpx="pnpm dlx"
 alias neofetch="fastfetch"
+alias yeet="paru -Rcs"
+alias yay="paru"
 
 # startup
 fastfetch
