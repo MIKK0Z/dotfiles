@@ -87,3 +87,11 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # path
 export PATH=$PATH:/home/mikey/bin
+
+# pnpm
+export PNPM_HOME="/home/mikey/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

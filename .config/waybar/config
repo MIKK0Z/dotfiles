@@ -34,7 +34,6 @@
         "tooltip-format-wifi": "{essid}\n{ipaddr}",
         "tooltip-format-ethernet": "{ipaddr}",
         "tooltip-format-disconnected": "Disconnected",
-        // "on-click": "echo 'rofi wifi zrobic'"
         "on-click":  "alacritty -e sh -c \"nmtui\""
     },
 
@@ -103,6 +102,7 @@
 
     "clock": {
         "timezone": "Poland",
+	"locale": "de_DE.UTF-8",
         "tooltip-format": "<big>{:%d.%m.%Y}</big>\n<tt><small>{calendar}</small></tt>",
         "format": " {:%H:%M}",
         "calendar": {
