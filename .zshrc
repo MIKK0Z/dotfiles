@@ -16,7 +16,7 @@ zinit ice as"command" from"gh-r" \
 	atpull"%atclone" src"init.zsh"
 zinit light starship/starship
 
-export STARSHIP_CONFIG=/home/mikey/.config/starship/starship.toml
+export STARSHIP_CONFIG=${HOME}/.config/starship/starship.toml
 
 # plugins
 zinit light zsh-users/zsh-syntax-highlighting
