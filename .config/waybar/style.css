@@ -36,14 +36,26 @@
 /* center */
 #workspaces {
   margin: 0 .5rem;
+
 }
 
 #workspaces button {
   color: @lavender;
-  padding-right: .9rem; 
+  background-color: @crust;
+  padding: 0;
+  min-width: 2.25rem;
+  margin-right: .25rem;
+  transition: 100ms;
+  padding: 4px 0;
+}
+
+#workspaces button:last-child {
+  margin-right: 0;
 }
 
 #workspaces button.active {
+  min-width: 4rem;
+  background-color: @mantle;
   color: @sky;
 }
 

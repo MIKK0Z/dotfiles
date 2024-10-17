@@ -15,7 +15,9 @@
 
     // center
     "hyprland/workspaces": {
-        "format": ""
+        "persistent-workspaces": {
+            "*": 5
+        }
     },
     
     // right
