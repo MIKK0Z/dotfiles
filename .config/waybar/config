@@ -10,15 +10,12 @@
 
     // left
     "hyprland/window": {
+        
         "icon": true
     },
 
     // center
-    "hyprland/workspaces": {
-        "persistent-workspaces": {
-            "*": 5
-        }
-    },
+    "hyprland/workspaces": {},
     
     // right
     // connections
