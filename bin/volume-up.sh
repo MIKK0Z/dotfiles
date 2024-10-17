@@ -10,5 +10,4 @@ if [ $new_volume -gt 100 ]; then
     new_volume=100
 fi
 
-
 pactl set-sink-volume 0 $new_volume%
