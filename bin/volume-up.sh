@@ -3,4 +3,6 @@ if [ -z $1 ]; then
     exit 1
 fi
 
+current_volume= get-sink-volume 0
+
 pactl set-sink-volume 0 +$1%
