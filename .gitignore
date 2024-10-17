@@ -1,17 +1,16 @@
 *
+!*/
 
 !.gitignore
 !.zshrc
-!/bin
 
-/.config/gh/
-/.config/VSCodium/
-/.config/systemd/
-/.config/gtk-3.0/
-/.config/pavucontrol.ini
-/.config/user-dirs.dirs
-/.config/user-dirs.locale
-/.config/Google/
-/.config/JetBrains/
-/.config/htop/
-/.config/godot/
+!bin/*
+
+!.config/alacrity
+!.config/dunst
+!.config/fastfetch
+!.config/hypr
+!.config/starship
+!.config/tofi
+!.config/waybar
+!.config/background
