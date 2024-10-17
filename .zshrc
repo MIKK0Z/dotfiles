@@ -60,7 +60,7 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # aliases
-alias clear="clear && fastfetch"
+alias clear="clear && startup"
 alias ls="ls --color"
 alias ll="ls -l --color"
 alias la="ls -la --color"
@@ -69,8 +69,11 @@ alias neofetch="fastfetch"
 alias yeet="paru -Rcs"
 alias yay="paru"
 
-# startup
-fastfetch
+function startup() {
+	fastfetch --logo <(fortune -s | cowsay -f tux)
+}
+
+startup
 
 # zoxide
 eval "$(zoxide init --cmd cd zsh)"
