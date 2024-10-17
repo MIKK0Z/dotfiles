@@ -1,3 +1,9 @@
+*
+
+!.gitignore
+!.zshrc
+!/bin
+
 /.config/gh/
 /.config/VSCodium/
 /.config/systemd/
