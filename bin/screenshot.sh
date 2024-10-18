@@ -1,14 +1,19 @@
 #!/bin/sh
 
-CHOSEN=$(printf "Screen\nArea\nColor" | tofi -c "$HOME"/.config/tofi/small-config)
+CHOSEN=$(printf "Screen\nArea" | tofi -c "$HOME"/.config/tofi/small-config)
 
-if [ "$CHOSEN" = "Color" ]; then
-    sleep .3
-fi
+function screen () {
+	grim - | wl-copy
+	wl-paste -t image/png >> "$HOME"/Pictures/Screenshots/$(date +%s)_screen.png
+}
+
+function area () {
+	grim -g "$(slurp)" - | wl-copy
+	wl-paste -t image/png >> "$HOME"/Pictures/Screenshots/$(date +%s)_area.png
+}
 
 case "$CHOSEN" in
-	"Screen") grim - | wl-copy ;;
-	"Area") grim -g "$(slurp)" - | wl-copy ;;
-	"Color") hyprpicker | tofi | wl-copy ;;
+	"Screen") screen ;;
+	"Area") area ;;
 	* ) exit 1 ;;
 esac
