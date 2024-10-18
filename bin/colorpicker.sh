@@ -1,10 +1,8 @@
 #!/bin/sh
 
-function convert_color() {
-    echo "$1"
+hexcolor=$(hyprpicker)
 
-    return $1
-}
+# trim spaces from beginning and end of rgb
+rgbcolor=$(echo $hexcolor | sed 's/#//g' | xxd -r -p | od -An -tu1 | awk '{print $1,$2,$3}')
 
-hyprpicker | tofi -c "$HOME"/.config/tofi/small-config | wl-copy
-
+printf "hex: $hexcolor\nrgb: $rgbcolor" | tofi -c "$HOME/.config/tofi/small-config" | cut -b6- | wl-copy
