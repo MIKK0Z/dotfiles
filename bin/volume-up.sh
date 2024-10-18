@@ -3,6 +3,10 @@ if [ -z $1 ]; then
     exit 1
 fi
 
+if [ "$(pactl get-sink-mute 0 | cut -b7)" == "y" ]; then
+    pactl set-sink-mute 0 false
+fi
+
 current_volume="$(pactl get-sink-volume 0 | cut -f2 -d'/' | cut -b2,3,4)"
 new_volume=$((current_volume + $1))
 
