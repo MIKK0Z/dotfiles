@@ -124,7 +124,7 @@
         "interval": 1,
         "tooltip": false,
         "format": " ",
-        "on-click": "start-tablet-drivers.sh"
+        "on-click": "toggle-tablet-drivers.sh"
     },
 
     // power
