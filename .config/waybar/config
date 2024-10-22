@@ -6,7 +6,13 @@
 
     "modules-left": ["hyprland/window"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["group/group-connection", "group/group-hardware", "group/group-misc", "group/group-power"],
+    "modules-right": [
+        "group/group-connection",
+        "group/group-hardware",
+        "group/group-misc",
+        "custom/tablet",
+        "group/group-power"
+    ],
 
     // left
     "hyprland/window": {
@@ -109,6 +115,16 @@
                 "today": "<span><b><u>{}</u></b></span>"
             }
         }
+    },
+
+    // tablet
+    "custom/tablet": {
+        "exec": "check-tablet-drivers.sh | jq --unbuffered --compact-output",
+        "return-type": "json",
+        "interval": 1,
+        "tooltip": false,
+        "format": " ",
+        "on-click": "start-tablet-drivers.sh"
     },
 
     // power

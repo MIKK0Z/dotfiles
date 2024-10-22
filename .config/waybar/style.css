@@ -131,6 +131,19 @@
   color: @maroon;
 }
 
+/* tablet */
+#custom-tablet {
+  padding: 0 .5rem 0 .75rem;
+}
+
+#custom-tablet.active {
+  color: @green;
+}
+
+#custom-tablet.inactive {
+  color: @red;
+}
+
 /* power */
 #custom-lock {
   color: @lavender;
