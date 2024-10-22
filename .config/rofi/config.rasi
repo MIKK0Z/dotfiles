@@ -1,0 +1,56 @@
+configuration{
+    modi: [drun, window];
+    display-drun: ">";
+    display-window: ">";
+    terminal: "alacritty";
+    location: 0;
+    font: "JetBrainsMono Nerd Font Medium 24";
+}
+
+@theme "catppuccin-macchiato"
+
+* {
+    background-color: #00000000;
+    transparency: "real";
+
+    spacing: 16;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+window {
+    fullscreen: true;
+    background-color: @backdrop;
+}
+
+mainbox {
+    margin: 30% 35% 30% calc(35% - 3ch);
+}
+
+inputbar {
+    color: @subtext1;
+    children: ["prompt", "entry"];
+}
+
+prompt {
+    color: inherit;
+}
+
+entry {
+    margin: 0 0 0 1ch;
+    color: inherit;
+}
+
+element {
+    margin: 0 0 0 3ch;
+    color: @overlay1;
+}
+
+element selected {
+    color: @lavender;
+}
+
+element-text {
+    color: inherit;
+}

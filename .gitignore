@@ -6,11 +6,11 @@
 
 !bin/*
 
-!.config/alacrity
-!.config/dunst
-!.config/fastfetch
-!.config/hypr
-!.config/starship
-!.config/tofi
-!.config/waybar
-!.config/background
+!.config/alacrity/*
+!.config/dunst/*
+!.config/fastfetch/*
+!.config/hypr/*
+!.config/starship/*
+!.config/rofi/*
+!.config/waybar/*
+!.config/background/*
