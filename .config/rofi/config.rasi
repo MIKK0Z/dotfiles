@@ -5,6 +5,7 @@ configuration{
     terminal: "alacritty";
     location: 0;
     font: "JetBrainsMono Nerd Font Medium 24";
+    save-history: true;
 }
 
 @theme "catppuccin-macchiato"

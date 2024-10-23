@@ -12,5 +12,6 @@
 !.config/hypr/*
 !.config/starship/*
 !.config/rofi/*
+!.config/tofi/*
 !.config/waybar/*
 !.config/background/*

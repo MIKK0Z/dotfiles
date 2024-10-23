@@ -119,12 +119,12 @@
 
     // tablet
     "custom/tablet": {
-        "exec": "check-tablet-drivers.sh | jq --unbuffered --compact-output",
+        "exec": "tablet-drivers-check.sh | jq --unbuffered --compact-output",
         "return-type": "json",
         "interval": 1,
         "tooltip": false,
         "format": " ",
-        "on-click": "toggle-tablet-drivers.sh"
+        "on-click": "tablet-drivers-toggle.sh"
     },
 
     // power
