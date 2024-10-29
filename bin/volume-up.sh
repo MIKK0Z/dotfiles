@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [ -z $1 ]; then
     echo "Usage: volume-up.sh <percentage>"
     exit 1

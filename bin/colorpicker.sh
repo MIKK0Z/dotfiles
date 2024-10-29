@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 hexcolor=$(hyprpicker)
 rgbcolor=$(echo $hexcolor | sed 's/#//g' | xxd -r -p | od -An -tu1 | awk '{print $1,$2,$3}')

@@ -1,9 +1,3 @@
-#!/bin/sh
+#!/bin/bash
 
-# cliphist list | tofi | cliphist decode | wl-copy
-
-# CLIPHIST=$(cliphist list | sed "/^--/d")
-
-#echo $CLIPHIST
-
-rofi -modi clipboard:~/.config/rofi/modis/cliphits-img -show clipboard
+cliphist list | rofi -dmenu -p ">" -display-columns 2 | cliphist decode | wl-copy

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if ! [[ $1 =~ ^[0-9]+$ ]]; then
     echo "Usage: brightness_down.sh <percentage>"
     exit 1

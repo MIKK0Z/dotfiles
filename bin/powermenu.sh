@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-CHOSEN=$(printf "Lock\nReboot\nShutdown" | tofi --config "$HOME"/.config/tofi/small-config)
+CHOSEN=$(printf "Lock\nReboot\nShutdown" | rofi -dmenu -p ">" -theme "$HOME"/.config/rofi/config-small.rasi)
 
 case "$CHOSEN" in
 	"Lock") hyprlock ;;

@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-EMOJI=$(sed '1,/^### DATA ###$/d' "$0" | tofi "$@" | cut -d ' ' -f 1 | tr -d '\n')
+EMOJI=$(sed '1,/^### DATA ###$/d' "$0" | rofi -dmenu -p ">" | cut -d ' ' -f 1 | tr -d '\n')
 echo -n "$EMOJI" | wl-copy
 exit
 ### DATA ###
