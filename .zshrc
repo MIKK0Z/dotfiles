@@ -85,11 +85,14 @@ eval "$(fzf --zsh)"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+# go
+export GOBIN="$HOME/go/bin"
+export PATH="$PATH:$GOBIN"
 # path
 export PATH=$PATH:/home/mikey/bin
 
 # pnpm
-export PNPM_HOME="/home/mikey/.local/share/pnpm"
+export PNPM_HOME="$HOME/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
