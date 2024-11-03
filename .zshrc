@@ -10,6 +10,13 @@ fi
 # source zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
+# tpm
+TPM_HOME="$HOME/.tmux/plugins/tpm"
+if [ ! -d "$TPM_HOME" ]; then
+	git clone https://github.com/tmux-plugins/tpm.git "$TPM_HOME"
+fi
+export TPM_HOME=$TPM_HOME
+
 # starship
 zinit ice as"command" from"gh-r" \
 	atclone"./starship init zsh > init.zsh; ./starship completions zsh > _starship" \

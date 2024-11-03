@@ -15,3 +15,4 @@
 !.config/tofi/*
 !.config/waybar/*
 !.config/background/*
+!.config/tmux/*
