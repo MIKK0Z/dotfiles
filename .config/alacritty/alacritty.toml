@@ -11,9 +11,6 @@ opacity = 0.6
 normal.family = "JetBrainsMono Nerd Font"
 size = 12
 
-[cursor]
-style.shape = "Beam"
-
 [mouse]
 hide_when_typing = true
 
