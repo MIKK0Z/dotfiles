@@ -33,9 +33,14 @@ zinit light Aloxaf/fzf-tab
 
 # snippets
 zinit snippet OMZP::git
+zinit snippet OMZP::gitignore
 zinit snippet OMZP::sudo
 zinit snippet OMZP::archlinux
 zinit snippet OMZP::command-not-found
+zinit snippet OMZP::alias-finder
+zinit snippet OMZP::golang
+zinit snippet OMZP::lol
+zinit snippet OMZP::tmux
 
 # load completions
 autoload -U compinit && compinit
@@ -66,6 +71,12 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
+# alias-finder
+zstyle ':omz:plugins:alias-finder' autoload yes # disabled by default
+zstyle ':omz:plugins:alias-finder' longer yes # disabled by default
+zstyle ':omz:plugins:alias-finder' exact yes # disabled by default
+zstyle ':omz:plugins:alias-finder' cheaper yes # disabled by default
+
 # aliases
 alias clear="clear && fastfetch"
 alias ls="ls --color"
@@ -75,6 +86,7 @@ alias pnpx="pnpm dlx"
 alias yeet="paru -Rcs"
 alias yay="paru"
 alias fastfetch="fastfetch --logo <(fortune -s | cowsay -f tux)"
+alias ..="cd .."
 
 # startup
 fastfetch
