@@ -40,7 +40,6 @@ zinit snippet OMZP::command-not-found
 zinit snippet OMZP::alias-finder
 zinit snippet OMZP::golang
 zinit snippet OMZP::lol
-zinit snippet OMZP::tmux
 
 # load completions
 autoload -U compinit && compinit
