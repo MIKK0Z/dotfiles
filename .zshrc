@@ -37,7 +37,7 @@ zinit light jeffreytse/zsh-vi-mode
 # snippets
 zinit snippet OMZP::git
 zinit snippet OMZP::gitignore
-#zinit snippet OMZP::sudo
+zinit snippet OMZP::sudo
 zinit snippet OMZP::archlinux
 zinit snippet OMZP::command-not-found
 zinit snippet OMZP::alias-finder
