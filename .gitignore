@@ -16,3 +16,5 @@
 !.config/waybar/*
 !.config/background/*
 !.config/tmux/*
+!.config/kanata/*
+!.config/systemd/user/kanata.service
