@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 CHOSEN=$(printf "Full\nArea\nWindow" | rofi -dmenu -p ">" -theme "~/.config/rofi/config-small.rasi")
 

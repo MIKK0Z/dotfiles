@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 EMOJI=$(sed '1,/^### DATA ###$/d' "$0" | rofi -dmenu -p ">" | cut -d ' ' -f 1 | tr -d '\n')
 echo -n "$EMOJI" | wl-copy

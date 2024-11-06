@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if [ "$(systemctl --user is-active opentabletdriver.service)" = "active" ]; then
     systemctl --user stop opentabletdriver.service

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 CHOSEN=$(printf "Lock\nReboot\nShutdown" | rofi -dmenu -p ">" -theme "$HOME"/.config/rofi/config-small.rasi)
 
