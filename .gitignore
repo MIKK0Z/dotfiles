@@ -19,3 +19,4 @@
 !.config/kanata/**
 !.config/systemd/user/kanata.service
 !.config/nvim/**
+.config/nvim/lazy-lock.json
