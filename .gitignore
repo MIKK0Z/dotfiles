@@ -4,17 +4,18 @@
 !.gitignore
 !.zshrc
 
-!bin/*
+!bin/**
 
-!.config/alacrity/*
-!.config/dunst/*
-!.config/fastfetch/*
-!.config/hypr/*
-!.config/starship/*
-!.config/rofi/*
-!.config/tofi/*
-!.config/waybar/*
-!.config/background/*
-!.config/tmux/*
-!.config/kanata/*
+!.config/alacrity/**
+!.config/dunst/**
+!.config/fastfetch/**
+!.config/hypr/**
+!.config/starship/**
+!.config/rofi/**
+!.config/tofi/**
+!.config/waybar/**
+!.config/background/**
+!.config/tmux/**
+!.config/kanata/**
 !.config/systemd/user/kanata.service
+!.config/nvim/**
