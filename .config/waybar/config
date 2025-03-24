@@ -10,13 +10,11 @@
         "group/group-connection",
         "group/group-hardware",
         "group/group-misc",
-        "custom/tablet",
         "group/group-power"
     ],
 
     // left
     "hyprland/window": {
-        
         "icon": true
     },
 
@@ -27,7 +25,7 @@
     // connections
     "group/group-connection": {
         "orientation": "horizontal",
-        "modules": ["network", "bluetooth"]
+        "modules": ["network", "custom/mullvad", "bluetooth"]
     },
 
     "network": {
@@ -42,11 +40,20 @@
         "on-click":  "alacritty -e sh -c \"nmtui\""
     },
 
+    "custom/mullvad": {
+	"format": "󰖂",
+	"interval": 1,
+	"exec": "mullvad-check.sh | jq --unbuffered --compact-output",
+	"return-type": "json",
+	"on-click": "mullvad-toggle.sh"
+    },
+
     "bluetooth": {
         "format-disabled": "󰂲",
         "format-off": "󰂲",
         "format-on": "󰂯",
         "format-connected": "󰂱",
+	"format-no-controller": "",
         "on-click": "blueman-manager"
     },
 
@@ -86,7 +93,7 @@
     // misc
     "group/group-misc": {
         "orientation": "horizontal",
-        "modules": ["pulseaudio", "backlight", "clock"]
+        "modules": ["pulseaudio", "backlight", "clock", "custom/spotify", "custom/steam"]
     },
     
     "backlight": {
@@ -107,7 +114,7 @@
 
     "clock": {
         "timezone": "Poland",
-	    "locale": "de_DE.UTF-8",
+	"locale": "de_DE.UTF-8",
         "tooltip-format": "<big>{:%d.%m.%Y}</big>\n<tt><small>{calendar}</small></tt>",
         "format": " {:%H:%M}",
         "calendar": {
@@ -117,14 +124,21 @@
         }
     },
 
-    // tablet
-    "custom/tablet": {
-        "exec": "tablet-drivers-check.sh | jq --unbuffered --compact-output",
-        "return-type": "json",
-        "interval": 1,
-        "tooltip": false,
-        "format": " ",
-        "on-click": "tablet-drivers-toggle.sh"
+    "custom/spotify": {
+	"format": "",
+	"return-type": "json",
+	"interval": 1,
+	"exec": "spotify-check.sh | jq --unbuffered --compact-output",
+	"on-click": "spotify-play-pause.sh",
+	"on-click-right": "killall spotify",
+	"on-scroll-up" : "playerctl -p spotify next",
+	"on-scroll-down" : "playerctl -p spotify previous",
+    },
+
+    "custom/steam": {
+	"format": "",
+	"on-click-right": "killall steam",
+	"on-click": "hyprctl dispatch exec steam",
     },
 
     // power

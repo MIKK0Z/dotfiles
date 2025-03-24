@@ -88,7 +88,7 @@ style = "bold red"
 format = " [$symbol$number]($style)"
 
 [bun]
-symbol = "🥟 "
+symbol = " "
 format = " [$symbol$version]($style)"
 
 [golang]
@@ -120,5 +120,6 @@ symbol = "󱘗 "
 format = " [$symbol$version]($style)"
 
 [sudo]
+symbol = " "
 disabled = false
 format = "[$symbol]($style)"

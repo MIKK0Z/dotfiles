@@ -81,6 +81,15 @@
   color: @green;
 }
 
+#custom-mullvad.Connected {
+  color: @green;
+}
+
+#custom-mullvad {
+  color: @red;
+  padding-right: 1rem;
+}
+
 #bluetooth.off, #bluetooth.disabled {
   color: @red;
 }
@@ -131,17 +140,14 @@
   color: @maroon;
 }
 
-/* tablet */
-#custom-tablet {
-  padding: 0 .5rem 0 .75rem;
-}
-
-#custom-tablet.active {
+#custom-spotify {
   color: @green;
+  padding-right: 1rem;
 }
 
-#custom-tablet.inactive {
-  color: @red;
+#custom-steam {
+  color: @blue;
+  padding-right: 1rem;
 }
 
 /* power */
