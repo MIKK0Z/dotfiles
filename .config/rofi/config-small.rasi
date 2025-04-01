@@ -2,5 +2,5 @@
 @import "defaults"
 
 mainbox {
-    margin: 40% 45% 40% calc(45% - 3ch);
+    margin: 35% 45% 35% calc(45% - 3ch);
 }

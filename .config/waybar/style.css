@@ -150,6 +150,18 @@
   padding-right: 1rem;
 }
 
+#custom-kanata {
+    padding-right: 1.25rem;
+}
+
+#custom-kanata.active {
+    color: @green;
+}
+
+#custom-kanata.inactive {
+    color: @red;
+}
+
 /* power */
 #custom-lock {
   color: @lavender;

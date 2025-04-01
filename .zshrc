@@ -1,7 +1,7 @@
 # zinit dir
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
-# if no zinit -> install zinit
+# if no zinit => install zinit
 if [ ! -d "$ZINIT_HOME" ]; then
 	mkdir -p "$(dirname $ZINIT_HOME)"
 	git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
@@ -11,11 +11,11 @@ fi
 source "${ZINIT_HOME}/zinit.zsh"
 
 # tpm
-TPM_HOME="$HOME/.tmux/plugins/tpm"
-if [ ! -d "$TPM_HOME" ]; then
-	git clone https://github.com/tmux-plugins/tpm.git "$TPM_HOME"
-fi
-export TPM_HOME=$TPM_HOME
+#TPM_HOME="$HOME/.tmux/plugins/tpm"
+#if [ ! -d "$TPM_HOME" ]; then
+#	git clone https://github.com/tmux-plugins/tpm.git "$TPM_HOME"
+#fi
+#export TPM_HOME=$TPM_HOME
 
 # starship
 zinit ice as"command" from"gh-r" \
@@ -31,9 +31,6 @@ zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 
-zinit ice depth=1
-zinit light jeffreytse/zsh-vi-mode
-
 # snippets
 zinit snippet OMZP::git
 zinit snippet OMZP::gitignore
@@ -45,13 +42,8 @@ zinit snippet OMZP::golang
 zinit snippet OMZP::lol
 
 # load completions
-autoload -U compinit && compinit
+autoload -Uz compinit && compinit
 zinit cdreplay -q
-
-# keybindins
-#bindkey -e
-bindkey '^p' history-search-backward
-bindkey '^n' history-search-forward
 
 # completions history
 HISTSIZE=5000
@@ -119,3 +111,12 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# keybindins
+bindkey "^P" history-search-backward
+bindkey "^N" history-search-forward
+bindkey "^Y" autosuggest-accept
+
+# na esc przebinodwac losowy guznik i na tym ustawić OMZP::sudo
+# na na capslocku (przebidowanym na esc) ustawic vi mode
+

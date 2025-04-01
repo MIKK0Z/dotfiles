@@ -10,6 +10,7 @@
 !.config/dunst/**
 !.config/fastfetch/**
 !.config/hypr/**
+.config/hypr/monitors.conf
 !.config/starship/**
 !.config/rofi/**
 !.config/tofi/**

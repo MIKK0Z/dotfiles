@@ -120,6 +120,6 @@ symbol = "󱘗 "
 format = " [$symbol$version]($style)"
 
 [sudo]
-symbol = " "
+symbol = "🧙 "
 disabled = false
 format = "[$symbol]($style)"

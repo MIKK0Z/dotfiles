@@ -93,7 +93,7 @@
     // misc
     "group/group-misc": {
         "orientation": "horizontal",
-        "modules": ["pulseaudio", "backlight", "clock", "custom/spotify", "custom/steam"]
+        "modules": ["pulseaudio", "backlight", "clock", "custom/spotify", "custom/steam", "custom/kanata"]
     },
     
     "backlight": {
@@ -139,6 +139,14 @@
 	"format": "",
 	"on-click-right": "killall steam",
 	"on-click": "hyprctl dispatch exec steam",
+    },
+
+    "custom/kanata": {
+	"format": "󰌌",
+	"return-type": "json",
+	"interval": 1,
+	"exec": "kanata-check.sh | jq --unbuffered --compact-output",
+	"on-click": "kanata-toggle.sh"
     },
 
     // power
