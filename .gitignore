@@ -3,6 +3,7 @@
 
 !.gitignore
 !.zshrc
+!.editorconfig
 
 !bin/**
 
