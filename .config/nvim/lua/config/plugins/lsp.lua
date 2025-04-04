@@ -12,11 +12,13 @@ return {
                 },
             },
         },
+
         config = function()
             local capabilities = require("blink.cmp").get_lsp_capabilities()
+            local lsp = require("lspconfig")
 
-            require("lspconfig").lua_ls.setup({ capabilities = capabilities })
-            require("lspconfig").phpactor.setup({ capabilities = capabilities })
+            lsp.lua_ls.setup({ capabilities = capabilities })
+            lsp.phpactor.setup({ capabilities = capabilities })
 
             vim.api.nvim_create_autocmd("LspAttach", {
                 callback = function(args)
