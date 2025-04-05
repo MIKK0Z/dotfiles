@@ -113,6 +113,8 @@ esac
 # pnpm end
 
 # keybindins
+bindkey -v
+
 bindkey "^P" history-search-backward
 bindkey "^N" history-search-forward
 bindkey "^Y" autosuggest-accept

@@ -19,7 +19,7 @@ vim.keymap.set("n", "<M-k>", "<cmd>cprev<CR>")
 vim.keymap.set("n", "-", ":lua MiniFiles.open()<CR>")
 
 vim.keymap.set("t", "<C-esc>", "<c-\\><c-n>")
-vim.keymap.set("n", "<Space>tt", ":Floaterminal<CR>")
+vim.keymap.set("n", "<space>tt", ":Floaterminal<CR>")
 
 vim.api.nvim_create_autocmd("TextYankPost", {
     desc = "Highlight when yanking",
@@ -27,6 +27,12 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     callback = function()
         vim.hl.on_yank()
     end,
+})
+
+vim.api.nvim_create_autocmd("ExitPre", {
+    desc = "Set cursor back to beam when exiting Neovim",
+    group = vim.api.nvim_create_augroup("Exit", { clear = true }),
+    command = "set guicursor=a:ver90",
 })
 
 vim.api.nvim_create_autocmd("TermOpen", {
