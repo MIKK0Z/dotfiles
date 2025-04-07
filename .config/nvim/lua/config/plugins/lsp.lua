@@ -19,9 +19,9 @@ return {
 
             lspconf.lua_ls.setup({ capabilities = capabilities })
             lspconf.phpactor.setup({ capabilities = capabilities })
-            lspconf.ts_ls.setup({
-                capabilities = capabilities,
-            })
+            lspconf.ts_ls.setup({ capabilities = capabilities })
+            lspconf.cssls.setup({ capabilities = capabilities })
+            lspconf.html.setup({ capabilities = capabilities })
 
             vim.api.nvim_create_autocmd("LspAttach", {
                 callback = function(args)

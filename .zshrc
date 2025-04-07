@@ -73,9 +73,11 @@ zstyle ':omz:plugins:alias-finder' cheaper yes # disabled by default
 
 # aliases
 alias clear="clear && fastfetch"
+alias c="clear"
 alias ls="ls --color"
 alias ll="ls -l --color"
 alias la="ls -la --color"
+alias vim="nvim"
 alias pnpx="pnpm dlx"
 alias yeet="paru -Rcs"
 alias yay="paru"
