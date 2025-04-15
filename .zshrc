@@ -30,6 +30,7 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
+zinit light jeffreytse/zsh-vi-mode
 
 # snippets
 zinit snippet OMZP::git
@@ -103,7 +104,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # go
 export GOBIN="$HOME/go/bin"
 export PATH="$PATH:$GOBIN"
-# path
+
+# bin
 export PATH=$PATH:/home/mikey/bin
 
 # pnpm
@@ -115,12 +117,10 @@ esac
 # pnpm end
 
 # keybindins
-bindkey -v
-
-bindkey "^P" history-search-backward
-bindkey "^N" history-search-forward
-bindkey "^Y" autosuggest-accept
-
-# na esc przebinodwac losowy guznik i na tym ustawić OMZP::sudo
-# na na capslocku (przebidowanym na esc) ustawic vi mode
+# zsh-vi-mode is cool but fucks up keybinds big time
+function zvm_after_init() {
+    bindkey -M viins "^P" history-search-backward
+    bindkey -M viins "^N" history-search-forward
+    bindkey -M viins "^Y" autosuggest-accept
+}
 
