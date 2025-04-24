@@ -84,6 +84,7 @@ alias yeet="paru -Rcs"
 alias yay="paru"
 alias fastfetch="fastfetch --logo <(fortune -s | cowsay -f tux)"
 alias ..="cd .."
+alias please="sudo"
 
 # startup
 fastfetch
