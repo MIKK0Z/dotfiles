@@ -18,7 +18,7 @@ vim.keymap.set("n", "<M-k>", "<cmd>cprev<CR>")
 
 vim.keymap.set("n", "-", ":lua MiniFiles.open()<CR>")
 
-vim.keymap.set("t", "<C-esc>", "<c-\\><c-n>")
+vim.keymap.set("t", "<esc><esc>", "<c-\\><c-n>")
 vim.keymap.set("n", "<space>tt", ":Floaterminal<CR>")
 
 vim.api.nvim_create_autocmd("TextYankPost", {
