@@ -4,6 +4,7 @@
 !.gitignore
 !.zshrc
 !/.editorconfig
+!/.clang-format
 
 !bin/**
 
