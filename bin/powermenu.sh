@@ -4,7 +4,7 @@ CHOSEN=$(printf "Lock\nSuspend\nReboot\nShutdown" | rofi -dmenu -p ">" -theme "$
 
 case "$CHOSEN" in
 	"Lock") hyprlock ;;
-    "Suspend") systemctl suspend ;;
+    "Suspend") hyprlock & sleep 0.5; systemctl suspend ;;
 	"Reboot") reboot ;;
 	"Shutdown") shutdown now ;;
 	*) exit 1 ;;
