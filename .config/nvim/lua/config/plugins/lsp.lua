@@ -24,6 +24,9 @@ return {
             lspconf.html.setup({ capabilities = capabilities })
             lspconf.pyright.setup({ capabilities = capabilities })
             lspconf.clangd.setup({ capabilities = capabilities })
+            lspconf.gopls.setup({ capabilities = capabilities, })
+            lspconf.templ.setup({ capabilities = capabilities })
+            lspconf.htmx_lsp.setup({ capabilities = capabilities })
 
             vim.api.nvim_create_autocmd("LspAttach", {
                 callback = function(args)
