@@ -22,7 +22,7 @@ return {
             local make_entry = require("telescope.make_entry")
             local conf = require("telescope.config").values
 
-            vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files)
+            vim.keymap.set("n", "<leader>ff", ":Telescope find_files hidden=true no_ignore=true<CR>")
             vim.keymap.set("n", "<leader>fh", require("telescope.builtin").help_tags)
             vim.keymap.set("n", "<leader>fg", function(opts)
                 opts = opts or {}
